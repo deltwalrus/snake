@@ -47,15 +47,9 @@ local gameOverSound = snd.sampleplayer.new("sounds/game-over.wav")
 -- Draw the title screen
 local function drawTitleScreen()
     gfx.clear()
-    
-    -- Background
+
+    -- White Background
     gfx.setColor(gfx.kColorWhite)
-    gfx.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
-    
-    gfx.setPattern({
-        0x11, 0x22, 0x44, 0x88,
-        0x11, 0x22, 0x44, 0x88
-    }) -- Dotted pattern
     gfx.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
 
     -- Title Text
@@ -139,7 +133,6 @@ function playdate.update()
 
     -- Clear the screen and draw
     gfx.clear()
-    drawBackground()
     moveSnake()
     checkCollisions()
     drawSnake()
