@@ -56,8 +56,8 @@ local function drawTitleScreen()
     gfx.setFont(gfx.kFontLarge)
     gfx.setColor(gfx.kColorBlack)
 
-    -- Draw "NEK" part of "SNEK"
-    gfx.drawText("NEK", 150, 100)
+    -- Draw "SNEK"
+    gfx.drawText("SNEK", 150, 100)
 
     -- Snake "S" for the title
     local x, y = 110, 100
