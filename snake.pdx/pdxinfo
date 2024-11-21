@@ -1,2 +1,6 @@
 pdxversion=20601
 buildtime=785522653
+name=Snek
+author=deltwalrus
+bundleID=com.deltwalrus.snek
+version=1.0
